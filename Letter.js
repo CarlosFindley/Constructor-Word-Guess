@@ -2,7 +2,7 @@
 
 // Creating the constructor
 function Letter(letter) {
-    // if a character is not a-z or 1-9, make it visible
+    // if a character is not a-z or 1-9, make it visible (to verify user input)
     this.visible = !/[a-z1-9]/i.test(letter);
     // A string value to store the underlying character for the letter
     this.letter = letter;

@@ -1,14 +1,15 @@
 // index.js: The file containing the logic for the course of the game, which depends on Word.js and:
 var inquirer = require("inquirer");
 var Word = require("./Word");
+var wordsToGuess = require("./guess");
 
-CONST wordsToGuess = [
-    "Montgomery", "Juneau", "Phoenix", "Little Rock", "Sacramento",
-    "Denver", "Hartford", "Dover", "Tallahassee", "Atlanta",
-    "Honolulu", "Boise", "Springfield", "Indianapolis", "Des Moines",
-    "Topeka", "eris", "makemake", "Frankfort", "Baton Rouge",
-    "Augusta", "Annapolis", "Boston"
-  ];
+// CONST wordsToGuess = [
+//     "Montgomery", "Juneau", "Phoenix", "Little Rock", "Sacramento",
+//     "Denver", "Hartford", "Dover", "Tallahassee", "Atlanta",
+//     "Honolulu", "Boise", "Springfield", "Indianapolis", "Des Moines",
+//     "Topeka", "eris", "makemake", "Frankfort", "Baton Rouge",
+//     "Augusta", "Annapolis", "Boston"
+//   ];
 
   // The Game constructor is responsible for keeping score and controlling the flow of the overall game
 
@@ -94,13 +95,13 @@ function Game() {
           // If the user's guess is in the current word, log that they chose correctly
           var didGuessCorrectly = self.currentWord.guessLetter(val.choice);
           if (didGuessCorrectly) {
-            console.log(chalk.green("\nCORRECT!!!\n"));
+            console.log("\nCORRECT!!!\n");
   
             // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
           }
           else {
             self.guessesLeft--;
-            console.log(chalk.red("\nINCORRECT!!!\n"));
+            console.log("\nINCORRECT!!!\n");
             console.log(self.guessesLeft + " guesses remaining!!!\n");
           }
         });
@@ -114,6 +115,12 @@ function Game() {
   }
   
   module.exports = Game;
+
+  // Initialize a new Game object
+var game = new Game();
+
+// Start playing
+game.play();
   
 
 
