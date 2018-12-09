@@ -5,11 +5,12 @@
 
 <h3>How to run the app:</h3>
 <p>The code syntax will look like this: <code>node index.js</code></p>
-<img src="imgs/.png">
+<img src="gifs/wordGuess.gif">
 
 <h3>Tools used:</h3>
 <ul>
   <li>Inquirer</li>
+  <li>Node.js</li>
 </ul>  
 
 <h3>Constructor requirements</h3>
@@ -33,7 +34,7 @@
 <br>
 
 <p><b>index.js:</b>The file containing the logic for the course of the game, which depends on Word.js and:</p>
-<lu>
+<ul>
   <li>Randomly selects a word and uses the Word constructor to store it</li>
   <li>Prompts the user for each guess and keeps track of the user's remaining guesses</li>
-<lu>
+</ul>
