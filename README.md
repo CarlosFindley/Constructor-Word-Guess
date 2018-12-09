@@ -26,6 +26,10 @@
 
 <br>
 
+<p><b>Word.js:</b> Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:</p>
+<ul>
+  <li>An array of new Letter objects representing the letters of the underlying word</li>
+
 <p><b>index.js:</b>The file containing the logic for the course of the game, which depends on Word.js and:</p>
 <lu>
   <li>Randomly selects a word and uses the Word constructor to store it</li>
