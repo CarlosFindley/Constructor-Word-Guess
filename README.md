@@ -1,6 +1,11 @@
 <h1>#Object Constructor-Word-Guess</h1>
+
 <h2>Project</h2>
 <p>This is a word guess command-line game using constructor functions.</p>
+
+<h3>How to run the app:</h3>
+<p>The code syntax will look like this: <code>node index.js</code></p>
+<img src="imgs/.png">
 
 <h3>Tools used:</h3>
 <ul>
